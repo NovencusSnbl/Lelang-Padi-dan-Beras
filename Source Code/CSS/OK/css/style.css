@@ -1,0 +1,342 @@
+/*Global styles*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+
+}
+
+.hero {
+	position: absolute;
+	width: 1140px;
+	top: 50%;
+	left: 50%; 
+	transform: translate(-50%,-50%);
+}
+
+header {
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/loker1.jpg);
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+}
+h1{
+	color: white;
+}
+
+.main-nav{
+	float: right;
+	list-style: none;
+	margin-top: 50px;
+}
+
+.main-nav li{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.main-nav li a{
+	color: white;
+	text-decoration: none;
+	font-size: 90%;
+	font-weight: bold;
+}
+.main-nav li a:hover{
+	color: #e67e22;
+	border-bottom: 2px solid #e67e22;
+	transition: all 0.5s ease-in;
+	padding: 15px 0;
+}
+
+.logo img{
+	height: 100px; 
+	float: left;
+	margin-top: 30px;
+}
+
+.btn {
+	border: 1px solid #e67e22;
+	padding: 10px 30px;
+	color: #e67e22;
+	text-decoration: none;
+	border-radius: 12px;
+	margin-right: 15px;
+}
+
+.button {
+	margin-top: 40px;
+}
+
+.btn-half {
+	background-color: #e67e22;
+	color: white;
+}
+.btn-half:hover {
+	color: black;
+}
+
+.btn-full:hover {
+	background-color: #e67e22;
+	color: white;
+	transition: all 0.5s ease-in;
+}
+
+.copy {
+	width: 70%;
+	margin-left: 15%;
+	margin-bottom: 20px;
+	text-align: center; 	
+}
+
+h3:after{
+	width: 100px;
+	height: 2px;
+	background-color: white;
+	display: block;
+	content: " ";
+	margin: 0 auto;
+	margin-top: 10px; 
+}
+		
+.features h3{
+	padding-top: 80px;
+	margin-bottom: 30px;
+}
+
+.arranging {
+	text-align: justify;
+}
+
+.features i{
+	font-size: 40px;
+	color: #e67e22;
+	margin-left: 44.5%; 
+}
+
+.features h4{
+	margin-top: 25px; 	
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: 'Fredoka One', cursive;
+}
+
+.leftside, .rightside{
+	height: 60vh;
+	width: 100%;
+
+}
+
+@media screen and (min-width: 768px){
+	.leftside, .rightside {
+		height: 100vh;
+	}
+}
+
+
+
+.leftside {
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(image/loker1.jpg);
+	display:flex; 
+	justify-content:center; 
+	align-items: center;
+	background-repeat: no-repeat;
+}
+
+.leftside h1 a{
+	color: #e67e22;
+	font-family: 'Fredoka One', cursive;
+}
+.leftside h1 a:hover{
+	color: white;
+	transition: all 0.7s ease-in;
+	text-decoration: none;
+
+}
+.rightside {
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(image/loker3.jpg);
+    display:flex; 
+	justify-content:center; 
+	align-items: center;
+}
+.rightside h1 a{
+	color: white;
+	font-family: 'Fredoka One', cursive;
+}
+.rightside h1 a:hover{
+	color: #e67e22;
+	transition: all 0.7s ease-in;
+	text-decoration: none;
+
+}
+.rightside:hover {
+	background-image:url(image/loker3.jpg);
+	transition: all 0.5s ease-in;
+
+}
+
+.leftside:hover {
+	background-image:url(image/loker3.jpg);
+	transition: all 0.5s ease-in;
+
+}
+
+.no-space > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+    margin-top: 20px;
+    margin-right: 0;
+    margin-left: 0;
+}
+.col-sm-7.lima-tiga {
+    width: 60% !important;
+    
+    }
+
+.col-sm-5.lima-dua {
+    width: 40% !important;
+    
+}
+
+.team-area {
+	margin-top: 50px;
+}
+
+.team-area .sub-heading{
+	margin-bottom: 90px;
+
+}
+
+.team-man {
+	position: absolute;
+	left: 50%;
+	margin-left: -25%;
+	top: -13%;
+	overflow: hidden;
+	min-height: 100px;
+	height: 100px;
+	width: 100px;
+	min-width: 100px;
+	border: 10px solid #e67e22;
+	border-radius: 50%; 
+}
+
+.team-man img{
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	min-width: 100%;
+	border-radius: 50%;
+}
+
+.team-description h3{
+/*	color: #e67e22;
+*/	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-top: 53px;
+	margin-bottom: 5px;
+}
+
+.team-description span{
+/*	color: #6c6c6c;
+*/	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 0.025em;
+}
+
+.team-description p{
+/*	color: dimgrey;
+*/	font-size: 14px;
+	padding: 25px 15px;
+	line-height: 24px;
+}
+
+.team-description {
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+}
+.team-description:hover{
+	background-color: #e67e22;	
+	color: white;
+	transition: all 0.5s ease-in;
+
+}
+
+.team-social-network {
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.team-social-network a{
+	margin: 0 6px;
+}
+
+.team-social-network i {
+	height: 40px;
+	width: 40px;
+	background-color: white;
+	text-align: center;
+	color: #e67e22;
+	border-radius: 50%;
+	border: 3px solid #c4e5f0;
+	padding-top: 10px;
+}
+
+.maps {
+	margin-top: 40px;
+}
+.footer{
+	background-image: url(image/loker-foot.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	-webkit-background-size:cover;
+	-moz-background-size:cover; 
+}
+
+.social a{
+	margin: 0 16px 20px 16px;
+	display: inline-block;
+}
+
+.social .fab{
+	font-size: 30px;
+	color: #e67e22;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: white;
+	line-height: 2;
+	transition: .3s;
+	border: 10px solid #b1c9d1;
+	text-align: center;
+}
+
+.social a i:hover{
+	border: 10px solid white;
+}
+
+.line {
+	width: 80px;
+	border-bottom: 2px solid #e67e22;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.copyright p{
+	font-size: 30px;
+	color: #e67e22;
+}
+
+
+
